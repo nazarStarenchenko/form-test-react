@@ -14,8 +14,10 @@ export default function Form() {
     event.preventDefault();
     const response = await fetch('https://test-nestjs-api.onrender.com/api/post', { 
       method: 'POST', 
-      mode: 'no-cors',
-      headers: {"Content-Type" : "application/json"},
+      mode: 'cors',
+	  headers: {
+    	'Content-Type': 'application/json;charset=utf-8'
+  	  },
       body: JSON.stringify(userForm)});
   
       //get response from the server
