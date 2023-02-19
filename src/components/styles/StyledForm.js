@@ -66,4 +66,10 @@ button[type="submit"]:focus {
   outline: none;
 }
 
+@media screen and (max-width: 800px) {
+  h2 {
+  font-size: 30px;
+  display: inline-block;
+  }
+
 `
